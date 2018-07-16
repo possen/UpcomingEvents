@@ -28,8 +28,7 @@ class UpcomingEventsTests: XCTestCase {
                 let event = grouped.flatMap { $0 }
                 _ = event.map { print($0.start) }
                 _ = dayInfo.map { print($0.date) }
-
-               _ = eventProcessor.checkForOverlaps(events: grouped)
+                _ = eventProcessor.checkForOverlaps(events: grouped)
             case .failure(let error):
                 XCTFail(error.localizedDescription)
             }

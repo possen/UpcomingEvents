@@ -94,10 +94,12 @@ internal extension EventViewController {
 
         case .loadFailed(let error):
             spinner.isHidden = true
+
             let alert = UIAlertController(
                 title: "Error",
                 message: error.localizedDescription,
                 preferredStyle: .alert)
+
             let okButton = UIAlertAction(title: "OK", style: .default) { action in
                 alert.dismiss(animated: true)
             }
