@@ -23,10 +23,10 @@ internal class CollectionViewSectionAdaptor<HeaderCell: UICollectionReusableView
     private var models: [Model]
 
     internal init(
-            reuseIdentfier: String,
-            collectionView: UICollectionView,
-            configure: @escaping (HeaderCell, Model) -> Void
-        ) {
+        reuseIdentfier: String,
+        collectionView: UICollectionView,
+        configure: @escaping (HeaderCell, Model) -> Void
+    ) {
         self.reuseIdentfier = reuseIdentfier
         self.configure = configure
         self.models = []
@@ -37,10 +37,10 @@ internal class CollectionViewSectionAdaptor<HeaderCell: UICollectionReusableView
     }
 
     internal func cellForSectionHeader(
-            collectionView: UICollectionView,
-            kind: String,
-            indexPath: IndexPath
-        ) -> HeaderCell {
+        collectionView: UICollectionView,
+        kind: String,
+        indexPath: IndexPath
+    ) -> HeaderCell {
 
         guard let header = collectionView.dequeueReusableSupplementaryView(
             ofKind: kind,
@@ -66,10 +66,10 @@ internal class CollectionViewAdaptor<CollectionCell: UICollectionViewCell, Model
     private let collectionView: UICollectionView
 
     internal init(
-            reuseIdentfier: String,
-            collectionView: UICollectionView,
-            configure: @escaping (CollectionCell, Model, Int) -> Void
-        ) {
+        reuseIdentfier: String,
+        collectionView: UICollectionView,
+        configure: @escaping (CollectionCell, Model, Int) -> Void
+    ) {
         models = []
         self.reuseIdentfier = reuseIdentfier
         self.configure = configure
@@ -88,15 +88,16 @@ internal class CollectionViewAdaptor<CollectionCell: UICollectionViewCell, Model
     }
 
     internal func collectionView(
-            _ collectionView: UICollectionView,
-            numberOfItemsInSection section: Int) -> Int {
+        _ collectionView: UICollectionView,
+        numberOfItemsInSection section: Int
+    ) -> Int {
         return models[section].count
     }
 
     internal func collectionView(
-            _ collectionView: UICollectionView,
-            cellForItemAt indexPath: IndexPath
-        ) -> UICollectionViewCell {
+        _ collectionView: UICollectionView,
+        cellForItemAt indexPath: IndexPath
+    ) -> UICollectionViewCell {
 
         guard let cell = collectionView.dequeueReusableCell(
             withReuseIdentifier: reuseIdentfier,
@@ -111,10 +112,10 @@ internal class CollectionViewAdaptor<CollectionCell: UICollectionViewCell, Model
     }
 
     internal func collectionView(
-            _ collectionView: UICollectionView,
-            viewForSupplementaryElementOfKind kind: String,
-            at indexPath: IndexPath
-        ) -> UICollectionReusableView {
+        _ collectionView: UICollectionView,
+        viewForSupplementaryElementOfKind kind: String,
+        at indexPath: IndexPath
+    ) -> UICollectionReusableView {
 
         guard let header = sectionAdaptor?.cellForSectionHeader(
             collectionView: collectionView,

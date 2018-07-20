@@ -24,6 +24,7 @@ internal struct EventProcessor {
     // O(N) since sorted. 
     internal func checkForOverlaps(events: [[Event]]) -> [[(Bool, Event)]] {
         return events.map {
+            
             var prev = Event(
                 title: "",
                 start: Date(timeIntervalSince1970: 0),
