@@ -42,9 +42,8 @@ internal struct EventProcessor {
 
         // strip off detail info from dates, just getting days,
         // keep in tuples so we don't lose pairing.
-        let keys = events.map { (
-            formatter.date(from: formatter.string(from: $0.start)) ?? Date(),
-            $0)
+        let keys = events.map {
+            ( formatter.date(from: formatter.string(from: $0.start)) ?? Date(), $0 )
         }
 
         // sort keys base upon the date O(N log N)
