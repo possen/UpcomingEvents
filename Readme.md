@@ -1,8 +1,6 @@
 
 Upcoming Events:
-
-I hope it is ok I did this in Xcode 10 beta 3, I upgraded a while ago, and I don't have diskspace for more than
-one Xcode.
+Show a calendar view and conflicted dates. 
 
 Goals (Completed):
 * Demonstrate functional programming
