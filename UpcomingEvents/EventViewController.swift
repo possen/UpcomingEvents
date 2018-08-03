@@ -42,8 +42,8 @@ internal class EventViewController: UICollectionViewController {
                 cell.viewData = EventCell.ViewData(model: model, index: index)
 
                 cell.backgroundColor = index % 2 == 1
-                    ? UIColor.init(red: 0xDF/255.0, green: 0xEB/255.0, blue: 0xFF/255.0, alpha: 0.5)
-                    : UIColor.init(red: 0xD0/255.0, green: 0xEB/255.0, blue: 0xFF/255.0, alpha: 0.5)
+                    ? UIColor(red: 0xDF/255.0, green: 0xEB/255.0, blue: 0xFF/255.0, alpha: 0.5)
+                    : UIColor(red: 0xD0/255.0, green: 0xEB/255.0, blue: 0xFF/255.0, alpha: 0.5)
             }
 
             // Setup section adaptor to display the DayInfo.
