@@ -2,7 +2,7 @@
 Upcoming Events:
 Show a calendar view and conflicted dates. 
 
-Goals (Completed):
+Goals:
 * Demonstrate functional programming
 * Separation of concerns
 * Separate sectoins for each Day
