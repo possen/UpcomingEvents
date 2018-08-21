@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D56A3A7121163E3A00A9F732 /* CollectionViewHeaderAdaptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D56A3A7021163E3A00A9F732 /* CollectionViewHeaderAdaptor.swift */; };
 		D576C86B20F169B40072336D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D576C86A20F169B40072336D /* AppDelegate.swift */; };
 		D576C87220F169BC0072336D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D576C87120F169BC0072336D /* Assets.xcassets */; };
 		D576C87520F169BC0072336D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D576C87320F169BC0072336D /* LaunchScreen.storyboard */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D56A3A7021163E3A00A9F732 /* CollectionViewHeaderAdaptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewHeaderAdaptor.swift; sourceTree = "<group>"; };
 		D57629A120F4942A00C5D9A6 /* FrameCalc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameCalc.swift; sourceTree = "<group>"; };
 		D576C86720F169B40072336D /* UpcomingEvents.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UpcomingEvents.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D576C86A20F169B40072336D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -107,6 +109,7 @@
 				D576C87620F169BC0072336D /* Info.plist */,
 				D576C88720F1809B0072336D /* EventViewController.swift */,
 				D57AE95C20F2906F00D306E1 /* CollectionViewAdaptor.swift */,
+				D56A3A7021163E3A00A9F732 /* CollectionViewHeaderAdaptor.swift */,
 				D576C88520F16FB00072336D /* EventLogicController.swift */,
 				D576C88B20F1CB6A0072336D /* EventProcessor.swift */,
 				D576C87E20F16BA30072336D /* DataLoader.swift */,
@@ -264,6 +267,7 @@
 			files = (
 				D57AE95D20F2906F00D306E1 /* CollectionViewAdaptor.swift in Sources */,
 				D576C87F20F16BA40072336D /* DataLoader.swift in Sources */,
+				D56A3A7121163E3A00A9F732 /* CollectionViewHeaderAdaptor.swift in Sources */,
 				D576C86B20F169B40072336D /* AppDelegate.swift in Sources */,
 				D576C88C20F1CB6A0072336D /* EventProcessor.swift in Sources */,
 				D576C88320F16CF90072336D /* EventCell.swift in Sources */,
